@@ -1,0 +1,194 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+:root {
+	--light-100: #a4a49e;
+
+	--primary-200: #f9d372;
+	--primary-300: #ca861e;
+
+	--dark-100: #101010;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: 'Roboto', sans-serif;
+	background: var(--dark-100);
+	color: var(--light-100);
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.gap-16 {
+	gap: 1.6rem;
+}
+
+.gap-24 {
+	gap: 2.4rem;
+}
+
+.container {
+	width: min(90%, 1400px);
+	margin-inline: auto;
+}
+
+
+/* NAVBAR */
+.nav .logo {
+	flex: 1 1 210px;
+	color: var(--primary-200);
+}
+
+.navbar {
+	padding-block: 1.6rem;
+	border-bottom: 1px solid var(--primary-300);
+}
+
+.nav .menu li:hover a {
+	opacity: .8;
+	transition: all .3s ease-in-out;
+	color: var(--primary-200);
+}
+
+
+/* HERO */
+.hero h1 {
+	font-size: clamp(3.2rem, 7vw, 4.8rem);
+	font-weight: bold;
+	line-height: 140%;
+	text-transform: uppercase;
+	background: linear-gradient(to bottom, var(--primary-200) 16%, var(--primary-300) 84%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.hero {
+	padding-block: 6rem;
+}
+
+.hero p {
+	font-size: 1.8rem;
+	margin-bottom: 2.4rem;
+}
+
+.button {
+	display: inline-block;
+	transition: all .3s ease-in-out;
+	padding: 1rem 4rem;
+	background: var(--primary-200);
+	color: var(--dark-100);
+}
+
+.button.button--primary {
+	background: linear-gradient(to bottom, var(--primary-200), var(--primary-300));
+	color: var(--dark-100);
+}
+
+.button.button--primary:hover {
+	filter: brightness(.8);
+}
+
+.button.button--outline {
+	background: transparent;
+	color: var(--primary-200);
+	border: 1px solid var(--primary-200);
+}
+
+.button.button--outline:hover {
+	background: linear-gradient(to bottom, var(--primary-200), var(--primary-300));
+	color: var(--dark-100);
+	border: 1px solid var(--dark-100);
+}
+
+
+/* MAIN */
+.main h2 {
+	flex: 0 0 300px;
+	color: var(--primary-200);
+}
+
+.main p {
+	flex: 1 1 280px;
+}
+
+.main .boxes {
+	width: 910px;
+}
+
+.main {
+	padding-block: 10rem;
+}
+
+
+/* WALLPAPER */
+.wallpaper {
+	width: 100%;
+	height: 40rem;
+}
+
+.wallpaper img {
+	width: 100%;
+	height: 100%;
+}
+
+
+/* FOOTER */
+.footer {
+	padding-block: 2.4rem;
+}
+
+.footer ul li i {
+	font-size: 2.4rem;
+	transition: all .3s ease-in-out;
+	color: var(--primary-200);
+}
+
+.footer ul li:hover i {
+	color: var(--primary-300);
+}
+
+.footer .logo {
+	font-size: 1.8rem;
+	color: var(--primary-200);
+}
